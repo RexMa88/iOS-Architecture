@@ -59,4 +59,6 @@ And the architecture benefit is we can achieve our data in method,and We don't d
 1,We make a Object that class of XXXRequest;
 2,We transfer method in XXXRequest;
     
+and there is some thing impotant to say,we'd better setting AutoLayout in ViewDidLayoutSubView,and in ViewDidLoad,We just addSubViews is enough.https://github.com/SnapKit/Masonry.git is a good tool that can let you get rid of NSAutoLayout,it use the relation of superView and subView layout,and you will give up CGRect.
 
+NSNotification should be stated in ViewDidAppear,and remove in ViewWillDisAppear.
